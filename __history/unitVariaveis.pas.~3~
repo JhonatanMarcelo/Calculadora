@@ -1,0 +1,47 @@
+unit unitVariaveis;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
+
+type
+  TForm4 = class(TForm)
+    Label1: TLabel;
+    Label2: TLabel;
+    Label3: TLabel;
+    btSomarClick: TButton;
+    Label4: TLabel;
+    Label5: TLabel;
+    procedure btSomarClickClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form4: TForm4;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm4.btSomarClickClick(Sender: TObject);
+// se usa VAR antes do BEGIN para declarar uma variavel
+var
+//variaveis numericas, integer (inteiros), real (com virgulas);
+  numero1: Integer;
+  numero2: Real;
+
+//variaveis textuais
+// nome: String;
+
+//logica
+//maiorIdade: Boolean;
+begin
+
+end;
+
+end.
